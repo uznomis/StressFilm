@@ -45,6 +45,7 @@ for i = 1:size(I,1)
 end
 
 %% shows mean intensity for each sector
+% Note: the stresses are ordered *clockwise* from x+ axis (the axis pointing right)
 load('stressFilmIntensities.mat');
 stresses = zeros(length(pixelBySector),1);
 imshow(I);
